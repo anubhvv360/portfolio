@@ -23,7 +23,7 @@ apps = [
     },
     {
         "name": "Tell Me About Yourself Generator",
-        "description": "This tool generates a unique, engaging, and personalized "Tell Me About Yourself" introduction. Fill in the details and let AI craft a compelling response! ",
+        "description": "This tool generates a unique, engaging, and personalized 'Tell Me About Yourself' introduction. Fill in the details and let AI craft a compelling response!",
         "video_url": "https://youtu.be/XY7ZjBra9rg",  # Replace with your video URL
         "link": "https://intro-agent.streamlit.app/"  # Replace with your app link
     }
