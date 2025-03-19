@@ -3,53 +3,45 @@ import streamlit as st
 # Set page configuration
 st.set_page_config(page_title="Gen AI Apps Portfolio", layout="centered")
 
-# Title and Introduction
+# Common Introduction
 st.title("Gen AI Apps Portfolio")
-st.write("""
-Welcome to my portfolio of Gen AI applications. Explore the projects below by clicking on the buttons to be redirected to the respective app pages. 
-Watch the walkthrough video for an overview of my work.
-""")
+st.write("Welcome to my portfolio of Gen AI applications. Below you'll find individual sections for each app with a brief description, demo video, and a button to try out the app.")
 
-# Walkthrough Video Section
-st.header("Walkthrough Video")
-# Replace the URL below with your own walkthrough video URL or use a local file path.
-video_url = "https://www.example.com/path_to_your_video.mp4"
-st.video(video_url)
+# Define the portfolio apps
+apps = [
+    {
+        "name": "Gen AI Chatbot",
+        "description": "A conversational AI that assists with various tasks, from customer support to interactive learning.",
+        "video_url": "https://www.example.com/path_to_your_chatbot_video.mp4",  # Replace with your video URL
+        "link": "https://example.com/gen-ai-chatbot"  # Replace with your app link
+    },
+    {
+        "name": "Gen AI Image Generator",
+        "description": "Generates visually appealing images from text prompts using advanced AI techniques.",
+        "video_url": "https://www.example.com/path_to_your_image_generator_video.mp4",  # Replace with your video URL
+        "link": "https://example.com/gen-ai-image-generator"  # Replace with your app link
+    },
+    {
+        "name": "Gen AI Data Analyzer",
+        "description": "Provides in-depth analysis of complex data sets using AI-driven insights.",
+        "video_url": "https://www.example.com/path_to_your_data_analyzer_video.mp4",  # Replace with your video URL
+        "link": "https://example.com/gen-ai-data-analyzer"  # Replace with your app link
+    }
+]
 
-# Portfolio Apps Section
-st.header("Explore My Gen AI Apps")
-
-# List of Gen AI apps with details
-# apps = [
-#     {
-#         "name": "Procurement Agentic AI",
-#         "link": "https://procurementagent.streamlit.app/",
-#         "description": "A conversational AI that assists with various tasks, from customer support to interactive learning."
-#     },
-#     {
-#         "name": "Gen AI Image Generator",
-#         "link": "https://example.com/gen-ai-image-generator",
-#         "description": "Generates visually appealing images from text prompts using advanced AI techniques."
-#     },
-#     {
-#         "name": "Gen AI Data Analyzer",
-#         "link": "https://example.com/gen-ai-data-analyzer",
-#         "description": "Provides in-depth analysis of complex data sets using AI-driven insights."
-#     }
-# ]
-
-# # Display each app with its description and a clickable button
-# for app in apps:
-#     st.subheader(app["name"])
-#     st.write(app["description"])
+# Iterate over each app to display its individual content
+for app in apps:
+    st.header(app["name"])
+    st.write(app["description"])
+    st.video(app["video_url"])
     
-#     # Create a clickable HTML button that opens the link in a new tab
-#     button_html = f'''
-#     <a href="{app["link"]}" target="_blank">
-#         <button style="padding: 10px 20px; font-size:16px; background-color:#4CAF50; color:white; border:none; border-radius:5px; cursor:pointer;">
-#             Visit {app["name"]}
-#         </button>
-#     </a>
-#     '''
-#     st.markdown(button_html, unsafe_allow_html=True)
-#     st.markdown("---")
+    # Create a clickable button that opens the app link in a new tab
+    button_html = f"""
+    <a href="{app["link"]}" target="_blank">
+        <button style="padding: 10px 20px; font-size:16px; background-color:#4CAF50; color:white; border:none; border-radius:5px; cursor:pointer;">
+            Try it out
+        </button>
+    </a>
+    """
+    st.markdown(button_html, unsafe_allow_html=True)
+    st.markdown("---")
