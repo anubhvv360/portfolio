@@ -4,8 +4,8 @@ import streamlit as st
 st.set_page_config(page_title="Gen AI Apps Portfolio", layout="centered")
 
 # Common Introduction
-st.title("Gen AI Apps Portfolio")
-st.write("Welcome to my portfolio of Gen AI applications. Below you'll find individual sections for each app with a brief description, demo video, and a button to try out the app.")
+st.title("Anubhav's Gen AI Apps")
+st.write("Welcome to my portfolio of Gen AI applications. I create these apps using Streamlit, LangChain and Gemini. Below you'll find individual sections for each app with a brief description, demo video, and a button to try out the app.")
 
 # Define the portfolio apps
 apps = [
@@ -16,16 +16,16 @@ apps = [
         "link": "https://procurementagent.streamlit.app/"  # Replace with your app link
     },
     {
-        "name": "Gen AI Image Generator",
-        "description": "Generates visually appealing images from text prompts using advanced AI techniques.",
-        "video_url": "https://www.example.com/path_to_your_image_generator_video.mp4",  # Replace with your video URL
-        "link": "https://example.com/gen-ai-image-generator"  # Replace with your app link
+        "name": "SWOT Analysis Agent",
+        "description": "This LLM-powered AI Agent performs a detailed SWOT analysis, offering structured insights into a company's Strengths, Weaknesses, Opportunities, and Threats to aid strategic decision-making.",
+        "video_url": "https://youtu.be/6d411ybBAm4",  # Replace with your video URL
+        "link": "https://swotanalysis.streamlit.app/"  # Replace with your app link
     },
     {
-        "name": "Gen AI Data Analyzer",
-        "description": "Provides in-depth analysis of complex data sets using AI-driven insights.",
-        "video_url": "https://www.example.com/path_to_your_data_analyzer_video.mp4",  # Replace with your video URL
-        "link": "https://example.com/gen-ai-data-analyzer"  # Replace with your app link
+        "name": "Tell Me About Yourself Generator",
+        "description": "This tool generates a unique, engaging, and personalized "Tell Me About Yourself" introduction. Fill in the details and let AI craft a compelling response! ",
+        "video_url": "https://youtu.be/XY7ZjBra9rg",  # Replace with your video URL
+        "link": "https://intro-agent.streamlit.app/"  # Replace with your app link
     }
 ]
 
