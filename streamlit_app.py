@@ -37,8 +37,26 @@ for app in apps:
     
     # Create a clickable button that opens the app link in a new tab
     button_html = f"""
+    <style>
+      .gradient-button {{
+          padding: 10px 20px;
+          font-size: 16px;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          background: linear-gradient(45deg, purple, blue);
+          background-size: 200% 200%;
+          animation: gradientAnimation 3s ease infinite;
+      }}
+      @keyframes gradientAnimation {{
+          0% {{ background-position: 0% 50%; }}
+          50% {{ background-position: 100% 50%; }}
+          100% {{ background-position: 0% 50%; }}
+      }}
+    </style>
     <a href="{app["link"]}" target="_blank">
-        <button style="padding: 10px 20px; font-size:16px; background-color:#4CAF50; color:white; border:none; border-radius:5px; cursor:pointer;">
+        <button class="gradient-button">
             Try it out
         </button>
     </a>
