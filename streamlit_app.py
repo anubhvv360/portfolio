@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Set page configuration
-st.set_page_config(page_title="Gen AI Apps Portfolio", layout="centered")
+st.set_page_config(page_title="Gen AI Apps Portfolio", page_icon = "👨‍💻", layout="centered")
 
 # Common Introduction
 st.title("Anubhav's Gen AI Apps")
