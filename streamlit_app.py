@@ -10,10 +10,12 @@ st.write("Welcome to my portfolio of Gen AI applications. Below you'll find indi
 # Define the portfolio apps
 apps = [
     {
-        "name": "Gen AI Chatbot",
-        "description": "A conversational AI that assists with various tasks, from customer support to interactive learning.",
-        "video_url": "https://www.example.com/path_to_your_chatbot_video.mp4",  # Replace with your video URL
-        "link": "https://example.com/gen-ai-chatbot"  # Replace with your app link
+        "name": "Procurement AI Agent",
+        "description": "This AI-driven tool automates TransGlobal Industries' procurement using GenAI (LLMs, LangChain, Streamlit). 
+        It converts business needs into technical specs, generates RFPs, streamlines vendor selection, evaluates bids, and simulates 
+        negotiations—boosting efficiency, accuracy, and speed.",
+        "video_url": "https://youtu.be/YBKi49rBEg4",  # Replace with your video URL
+        "link": "https://procurementagent.streamlit.app/"  # Replace with your app link
     },
     {
         "name": "Gen AI Image Generator",
