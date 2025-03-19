@@ -11,9 +11,7 @@ st.write("Welcome to my portfolio of Gen AI applications. Below you'll find indi
 apps = [
     {
         "name": "Procurement AI Agent",
-        "description": "This AI-driven tool automates TransGlobal Industries' procurement using GenAI (LLMs, LangChain, Streamlit). 
-        It converts business needs into technical specs, generates RFPs, streamlines vendor selection, evaluates bids, and simulates 
-        negotiations—boosting efficiency, accuracy, and speed.",
+        "description": "This AI-driven tool automates TransGlobal Industries' procurement using GenAI (LLMs, LangChain, Streamlit). It converts business needs into technical specs, generates RFPs, streamlines vendor selection, evaluates bids, and simulates negotiations—boosting efficiency, accuracy, and speed.",
         "video_url": "https://youtu.be/YBKi49rBEg4",  # Replace with your video URL
         "link": "https://procurementagent.streamlit.app/"  # Replace with your app link
     },
