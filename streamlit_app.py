@@ -18,14 +18,20 @@ apps = [
     {
         "name": "SWOT Analysis Agent",
         "description": "This LLM-powered AI Agent performs a detailed SWOT analysis, offering structured insights into a company's Strengths, Weaknesses, Opportunities, and Threats to aid strategic decision-making.",
-        "video_url": "https://youtu.be/6d411ybBAm4",  # Replace with your video URL
-        "link": "https://swotanalysis.streamlit.app/"  # Replace with your app link
+        "video_url": "https://youtu.be/6d411ybBAm4",
+        "link": "https://swotanalysis.streamlit.app/"
     },
+    {
+        "name": "Resume Pivot Tool",
+        "description": "Resume Pivot Tool helps you generate ATS‑friendly, domain‑specific projects grounded in your actual experience. Upload your resume and a target job description to extract core work, skills, and JD insights.",
+        "video_url": "https://youtu.be/6d411ybBAm4",
+        "link": "https://jdprojects2.streamlit.app/"
+    },    
     {
         "name": "Tell Me About Yourself Generator",
         "description": "This tool generates a unique, engaging, and personalized 'Tell Me About Yourself' introduction. Fill in the details and let AI craft a compelling response!",
-        "video_url": "https://youtu.be/XY7ZjBra9rg",  # Replace with your video URL
-        "link": "https://intro-agent.streamlit.app/"  # Replace with your app link
+        "video_url": "https://youtu.be/XY7ZjBra9rg",
+        "link": "https://intro-agent.streamlit.app/"
     }
 ]
 
