@@ -24,7 +24,7 @@ apps = [
     {
         "name": "Resume Pivot Tool",
         "description": "Resume Pivot Tool helps you generate ATS‑friendly, domain‑specific projects grounded in your actual experience. Upload your resume and a target job description to extract core work, skills, and JD insights.",
-        "video_url": "https://youtu.be/6d411ybBAm4",
+        "video_url": "https://youtu.be/3nVtrSt3ddI",
         "link": "https://jdprojects2.streamlit.app/"
     },    
     {
