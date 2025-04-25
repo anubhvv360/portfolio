@@ -1,19 +1,20 @@
-# 🎈 Blank app template
+# Anubhav's Gen AI Apps Portfolio
 
-A simple Streamlit app template for you to modify!
+View my work in the domain of Generative AI!
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+A Streamlit-powered showcase of my generative AI projects, built with LangChain & Gemini:
 
-### How to run it on your own machine
+- **Procurement AI Agent**: Automate RFP creation & vendor negotiation  
+- **SWOT Analysis Agent**: On-demand, LLM-driven strategy insights  
+- **Resume Pivot Tool**: Generate ATS-friendly projects from your CV + JD  
+- **Tell Me About Yourself**: Personalized interview intros  
+- **Karma Yoga Report Generator**: Auto-produce weekly social-impact updates
 
-1. Install the requirements
+## 🔗 Links
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+- Live demo: https://anubhav-genai.streamlit.app  
+- Contact: anubhav.verma360@gmail.com
 
-2. Run the app
+---
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+© 2025 Anubhav Verma  
