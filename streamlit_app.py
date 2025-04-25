@@ -18,7 +18,7 @@ st.write(
 
 # Sidebar with photo, summary, timeline, contact and LinkedIn posts
 with st.sidebar:
-    st.image("https://raw.githubusercontent.com/anubhvv360/portfolio/main/assets/anubhav_photo.jpg", width=180)
+    st.image("https://raw.githubusercontent.com/anubhvv360/portfolio/main/assets/anubhav_photo.png", width=180)
     st.markdown("## About Me")
     st.write(
         "Tech-savvy consultant with 3 years of experience building Oracle-based systems for finance and supply chain. I turn business needs into scalable solutions—managing everything from design to rollout. Comfortable wearing multiple hats, working cross-functionally, and delivering impact in fast-paced, agile environments."
@@ -49,8 +49,8 @@ with st.sidebar:
     st.markdown("### 🔗 LinkedIn Posts")
 # 1) Paste in the exact iframe-src URLs LinkedIn provides (you can append ?compact=1 if you like)
     linkedin_iframes = [
-        "https://www.linkedin.com/embed/feed/update/urn:li:share:7297070217476681728?compact=1",
-        "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7213413516408414209?compact=1",
+        "https://www.linkedin.com/embed/feed/update/urn:li:share:7297070217476681728?collapsed=1",
+        "https://www.linkedin.com/embed/feed/update/urn:li:share:7234535171226525697?collapsed=1",
         "https://www.linkedin.com/embed/feed/update/urn:li:share:7213290956660297729?collapsed=1",
         "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7235718807384637440?collapsed=1",
     ]
