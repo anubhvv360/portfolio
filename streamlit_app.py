@@ -18,7 +18,7 @@ st.write(
 
 # Sidebar with photo, summary, timeline, contact and LinkedIn posts
 with st.sidebar:
-    st.image("assets/anubhav_photo.jpg", width=180)
+    #st.image("assets/anubhav_photo.jpg", width=180)
 
     st.markdown("## About Me")
     st.write(
