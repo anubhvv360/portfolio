@@ -18,8 +18,7 @@ st.write(
 
 # Sidebar with photo, summary, timeline, contact and LinkedIn posts
 with st.sidebar:
-    #st.image("assets/anubhav_photo.jpg", width=180)
-
+    st.image("assets/anubhav_photo.jpg", width=180)
     st.markdown("## About Me")
     st.write(
         "Tech-savvy consultant with 3 years of experience building Oracle-based systems for finance and supply chain. I turn business needs into scalable solutions—managing everything from design to rollout. Comfortable wearing multiple hats, working cross-functionally, and delivering impact in fast-paced, agile environments."
@@ -29,11 +28,11 @@ with st.sidebar:
     st.markdown(
         """
         - **2025–Present:** Consultant at Accenture Avanade
-        - **2024–2025:** MBA, Great Lakes Institute of Management, Chennai
+        - **2024–2025:** MBA - Great Lakes Institute of Management, Chennai
         - **2023–2024:** Certificate Programme in Project Management (CPPM), IIM Indore - Executive Education
         - **2022–2024:** Consultant at Genpact
         - **2021–2022:** Senior Associate at Genpact
-        - **2018–2021:** BBA Finance, Symbiosis Centre for Management Studies, Noida
+        - **2018–2021:** BBA Finance - Symbiosis Centre for Management Studies, Noida
         """
     )
 
