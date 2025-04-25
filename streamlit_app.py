@@ -58,7 +58,7 @@ with st.sidebar:
         """
     )
 
-    st.markdown("### 🔗 LinkedIn Posts")
+    #st.markdown("### 🔗 LinkedIn Posts")
 # 1) Paste in the exact iframe-src URLs LinkedIn provides (you can append ?compact=1 if you like)
     linkedin_iframes = [
         "https://www.linkedin.com/embed/feed/update/urn:li:share:7297070217476681728?collapsed=1",
