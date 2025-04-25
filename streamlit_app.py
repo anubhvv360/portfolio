@@ -26,7 +26,7 @@ apps = [
         "description": "Resume Pivot Tool helps you generate ATS‑friendly, domain‑specific projects grounded in your actual experience. Upload your resume and a target job description to extract core work, skills, and JD insights.",
         "video_url": "https://youtu.be/3nVtrSt3ddI",
         "link": "https://jdprojects2.streamlit.app/"
-    },    
+    },
     {
         "name": "Tell Me About Yourself Generator",
         "description": "This tool generates a unique, engaging, and personalized 'Tell Me About Yourself' introduction. Fill in the details and let AI craft a compelling response!",
@@ -38,7 +38,7 @@ apps = [
         "description": "This tool generates a Karma Yoga weekly report based on actual work done and the previous report. Karma Yoga is a social impact course at Great Lakes, Chennai. This tool helped students stay focused on on ground tasks instead of report writing and documentation.",
         "video_url": "https://youtu.be/XQW0tHtI2cM",
         "link": "https://karmayoga.streamlit.app/"
-    }    
+    }
 ]
 
 # Iterate over each app to display its individual content
