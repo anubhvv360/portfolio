@@ -92,6 +92,12 @@ apps = [
         "link": "https://procurementagent.streamlit.app/"
     },
     {
+        "name": "Kids’ Visionboard Generator",
+        "description": "This image + scenario generation agent turns a single photo and name into a playful, Pixar-style storyboard. Upload your child’s photo, pick (or type) a theme, and watch custom illustrations come to life—then download each one instantly!",
+        "video_url": "https://youtu.be/ACyzl0wUK24",
+        "link": "https://visionary-kid.streamlit.app/"
+    },    
+    {
         "name": "SWOT Analysis Agent",
         "description": "This LLM-powered AI Agent performs a detailed SWOT analysis, offering structured insights into a company's Strengths, Weaknesses, Opportunities, and Threats to aid strategic decision-making.",
         "video_url": "https://youtu.be/6d411ybBAm4",
