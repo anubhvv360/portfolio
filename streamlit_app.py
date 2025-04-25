@@ -2,49 +2,74 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 # Set page configuration
-st.set_page_config(page_title="Gen AI Apps Portfolio", page_icon = "👨‍💻", layout="wide")
+st.set_page_config(
+    page_title="Gen AI Apps Portfolio",
+    page_icon="👨‍💻",
+    layout="wide"
+)
 
-# Common Introduction
+# Main header and intro
 st.title("Anubhav's Gen AI Apps")
-st.write("Welcome to my portfolio of Gen AI applications. I create these apps using Streamlit, LangChain and Gemini. Below you'll find the applications, do take them for a test drive!")
+st.write(
+    "Welcome to my portfolio of Gen AI applications. "
+    "I create these apps using Streamlit, LangChain and Gemini. "
+    "Below you'll find the applications—do take them for a test drive!"
+)
 
+# Sidebar with photo, summary, timeline, contact and LinkedIn posts
 with st.sidebar:
     st.image("assets/anubhav_photo.jpg", width=180)
+
     st.markdown("## About Me")
-    st.write("Tech-savvy consultant with 3 years of experience building Oracle-based systems for finance and supply chain. I turn business needs into scalable solutions—managing everything from design to rollout. Comfortable wearing multiple hats, working cross-functionally, and delivering impact in fast-paced, agile environments.")
+    st.write(
+        "Tech-savvy consultant with 3 years of experience "
+        "building Oracle-based systems for finance and supply chain. "
+        "I turn business needs into scalable solutions—from design to rollout."
+    )
 
-    # Timeline & contact omitted for brevity…
+    st.markdown("### 📅 Timeline")
+    st.markdown(
+        """
+        - **2021–2023:** Business Analyst @ Genpact  
+        - **2020–2021:** MBA (Operations), Great Lakes Institute  
+        - **2016–2020:** B.Tech in Computer Science
+        """
+    )
 
-    st.markdown("## 🔗 LinkedIn Posts")
+    st.markdown("### 📬 Contact")
+    st.markdown(
+        """
+        - ✉️ [anubhav.verma@example.com](mailto:anubhav.verma@example.com)  
+        - 📱 +91-98765-43210  
+        - 🔗 [LinkedIn](https://www.linkedin.com/in/anubhav-verma/)
+        """
+    )
 
-    # 1) Define your post URLs here
+    st.markdown("### 🔗 LinkedIn Posts")
     linkedin_post_urls = [
         "https://www.linkedin.com/posts/anubhvv_just-a-few-days-ago-the-pgpm-cohort-of-2025-activity-7297110060512550912-2H-v",
         "https://www.linkedin.com/posts/anubhvv_elevating-my-expertise-proud-to-announce-activity-7213413516408414209-GDTD",
         "https://www.linkedin.com/posts/anubhvv_greatlakes-greatlakeschennai-convocationceremony-activity-7234535172702920704-2Qmq",
         "https://www.linkedin.com/posts/anubhvv_submission-deck-activity-7236213786834018304-yWi6"
-        # add more URLs as needed
     ]
-
-    # 2) Loop and embed each one
     for url in linkedin_post_urls:
         components.html(
-            f"""
+            f'''
             <blockquote class="linkedin-post" data-lang="en">
               <a href="{url}"></a>
             </blockquote>
             <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-            """,
-            height=300  # adjust height per post
+            ''',
+            height=300
         )
 
-# Define the portfolio apps
+# List of Gen AI apps to display
 apps = [
     {
         "name": "Procurement AI Agent",
         "description": "This AI-driven tool automates TransGlobal Industries' procurement using GenAI (LLMs, LangChain, Streamlit). It converts business needs into technical specs, generates RFPs, streamlines vendor selection, evaluates bids, and simulates negotiations—boosting efficiency, accuracy, and speed.",
-        "video_url": "https://youtu.be/YBKi49rBEg4",  # Replace with your video URL
-        "link": "https://procurementagent.streamlit.app/"  # Replace with your app link
+        "video_url": "https://youtu.be/YBKi49rBEg4",
+        "link": "https://procurementagent.streamlit.app/"
     },
     {
         "name": "SWOT Analysis Agent",
@@ -54,7 +79,7 @@ apps = [
     },
     {
         "name": "Resume Pivot Tool",
-        "description": "Resume Pivot Tool helps you generate ATS‑friendly, domain‑specific projects grounded in your actual experience. Upload your resume and a target job description to extract core work, skills, and JD insights.",
+        "description": "Resume Pivot Tool helps you generate ATS-friendly, domain-specific projects grounded in your actual experience. Upload your resume and a target job description to extract core work, skills, and JD insights.",
         "video_url": "https://youtu.be/3nVtrSt3ddI",
         "link": "https://jdprojects2.streamlit.app/"
     },
@@ -66,20 +91,20 @@ apps = [
     },
     {
         "name": "Karma Yoga Report Generator",
-        "description": "This tool generates a Karma Yoga weekly report based on actual work done and the previous report. Karma Yoga is a social impact course at Great Lakes, Chennai. This tool helped students stay focused on on ground tasks instead of report writing and documentation.",
+        "description": "This tool generates a Karma Yoga weekly report based on actual work done and the previous report. Karma Yoga is a social impact course at Great Lakes, Chennai. This tool helped students stay focused on on-ground tasks instead of report writing.",
         "video_url": "https://youtu.be/XQW0tHtI2cM",
         "link": "https://karmayoga.streamlit.app/"
     }
 ]
 
-# Iterate over each app to display its individual content
+# Render each app section with video + a gradient button
 for app in apps:
     st.header(app["name"])
     st.write(app["description"])
     st.video(app["video_url"])
-    
-    # Create a clickable button that opens the app link in a new tab
-    button_html = f"""
+
+    link = app["link"]
+    button_html = f'''
     <style>
       .gradient-button {{
           padding: 10px 20px;
@@ -98,12 +123,12 @@ for app in apps:
           100% {{ background-position: 0% 50%; }}
       }}
     </style>
-    <a href="{app["link"]}" target="_blank">
-        <button class="gradient-button">
-            Try it out
-        </button>
+
+    <a href="{link}" target="_blank">
+      <button class="gradient-button">
+        Try it out
+      </button>
     </a>
-    """
+    '''
     st.markdown(button_html, unsafe_allow_html=True)
     st.markdown("---")
-
