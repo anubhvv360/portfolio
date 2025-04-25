@@ -25,21 +25,25 @@ with st.sidebar:
         "Tech-savvy consultant with 3 years of experience building Oracle-based systems for finance and supply chain. I turn business needs into scalable solutions—managing everything from design to rollout. Comfortable wearing multiple hats, working cross-functionally, and delivering impact in fast-paced, agile environments."
     )
 
-    st.markdown("### 📅 Timeline")
+    st.markdown("### 📅 Professional Journey")
     st.markdown(
         """
-        - **2021–2023:** Business Analyst @ Genpact  
-        - **2020–2021:** MBA (Operations), Great Lakes Institute  
-        - **2016–2020:** B.Tech in Computer Science
+        - **2025–Present:** Consultant at Accenture Avanade
+        - **2024–2025:** MBA, Great Lakes Institute of Management, Chennai
+        - **2023–2024:** Certificate Programme in Project Management (CPPM), IIM Indore - Executive Education
+        - **2022–2024:** Consultant at Genpact
+        - **2021–2022:** Senior Associate at Genpact
+        - **2018–2021:** BBA Finance, Symbiosis Centre for Management Studies, Noida
         """
     )
 
     st.markdown("### 📬 Contact")
     st.markdown(
         """
-        - ✉️ [anubhav.verma@example.com](mailto:anubhav.verma@example.com)  
-        - 📱 +91-98765-43210  
-        - 🔗 [LinkedIn](https://www.linkedin.com/in/anubhav-verma/)
+        - ✉️ [anubhav.verma360@gmail.com](mailto:anubhav.verma360@gmail.com)  
+        - 📱 +91-87004-48744
+        - 📱 +971-55-880-5548
+        - 🔗 [LinkedIn](https://www.linkedin.com/in/anubhvv/)
         """
     )
 
