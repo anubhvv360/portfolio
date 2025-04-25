@@ -47,21 +47,28 @@ with st.sidebar:
     )
 
     st.markdown("### 🔗 LinkedIn Posts")
-    linkedin_post_urls = [
-        "https://www.linkedin.com/posts/anubhvv_just-a-few-days-ago-the-pgpm-cohort-of-2025-activity-7297110060512550912-2H-v",
-        "https://www.linkedin.com/posts/anubhvv_elevating-my-expertise-proud-to-announce-activity-7213413516408414209-GDTD",
-        "https://www.linkedin.com/posts/anubhvv_greatlakes-greatlakeschennai-convocationceremony-activity-7234535172702920704-2Qmq",
-        "https://www.linkedin.com/posts/anubhvv_submission-deck-activity-7236213786834018304-yWi6"
+# 1) Paste in the exact iframe-src URLs LinkedIn provides (you can append ?compact=1 if you like)
+    linkedin_iframes = [
+        "https://www.linkedin.com/embed/feed/update/urn:li:share:7297070217476681728?compact=1",
+        "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7213413516408414209?compact=1",
+        "https://www.linkedin.com/embed/feed/update/urn:li:share:7213290956660297729?collapsed=1",
+        "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7235718807384637440?collapsed=1",
     ]
-    for url in linkedin_post_urls:
+
+    # 2) Loop and inject each as an iframe
+    for src in linkedin_iframes:
         components.html(
             f'''
-            <blockquote class="linkedin-post" data-lang="en">
-              <a href="{url}"></a>
-            </blockquote>
-            <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+            <iframe 
+              src="{src}" 
+              height="400" 
+              width="100%" 
+              frameborder="0" 
+              allowfullscreen="" 
+              title="LinkedIn post"
+            ></iframe>
             ''',
-            height=300
+            height=420  # a little taller than the iframe itself
         )
 
 # List of Gen AI apps to display
