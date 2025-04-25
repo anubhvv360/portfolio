@@ -1,11 +1,42 @@
 import streamlit as st
+import streamlit.components.v1 as components
 
 # Set page configuration
-st.set_page_config(page_title="Gen AI Apps Portfolio", page_icon = "👨‍💻", layout="centered")
+st.set_page_config(page_title="Gen AI Apps Portfolio", page_icon = "👨‍💻", layout="wide")
 
 # Common Introduction
 st.title("Anubhav's Gen AI Apps")
 st.write("Welcome to my portfolio of Gen AI applications. I create these apps using Streamlit, LangChain and Gemini. Below you'll find the applications, do take them for a test drive!")
+
+with st.sidebar:
+    st.image("assets/anubhav_photo.jpg", width=180)
+    st.markdown("## About Me")
+    st.write("Tech-savvy consultant with 3 years of experience building Oracle-based systems for finance and supply chain. I turn business needs into scalable solutions—managing everything from design to rollout. Comfortable wearing multiple hats, working cross-functionally, and delivering impact in fast-paced, agile environments.")
+
+    # Timeline & contact omitted for brevity…
+
+    st.markdown("## 🔗 LinkedIn Posts")
+
+    # 1) Define your post URLs here
+    linkedin_post_urls = [
+        "https://www.linkedin.com/posts/anubhvv_just-a-few-days-ago-the-pgpm-cohort-of-2025-activity-7297110060512550912-2H-v",
+        "https://www.linkedin.com/posts/anubhvv_elevating-my-expertise-proud-to-announce-activity-7213413516408414209-GDTD",
+        "https://www.linkedin.com/posts/anubhvv_greatlakes-greatlakeschennai-convocationceremony-activity-7234535172702920704-2Qmq",
+        "https://www.linkedin.com/posts/anubhvv_submission-deck-activity-7236213786834018304-yWi6"
+        # add more URLs as needed
+    ]
+
+    # 2) Loop and embed each one
+    for url in linkedin_post_urls:
+        components.html(
+            f"""
+            <blockquote class="linkedin-post" data-lang="en">
+              <a href="{url}"></a>
+            </blockquote>
+            <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+            """,
+            height=300  # adjust height per post
+        )
 
 # Define the portfolio apps
 apps = [
@@ -75,3 +106,4 @@ for app in apps:
     """
     st.markdown(button_html, unsafe_allow_html=True)
     st.markdown("---")
+
