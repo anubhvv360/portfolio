@@ -18,7 +18,18 @@ st.write(
 
 # Sidebar with photo, summary, timeline, contact and LinkedIn posts
 with st.sidebar:
-    st.image("https://raw.githubusercontent.com/anubhvv360/portfolio/main/assets/anubhav_photo.png", width=180)
+    st.markdown(
+    """
+    <div style="display:flex; justify-content:center;">
+        <img 
+            src="https://raw.githubusercontent.com/anubhvv360/portfolio/main/assets/anubhav_photo.png" 
+            width="180"
+        >
+    </div>
+    """,
+    unsafe_allow_html=True
+    )
+    #st.image("https://raw.githubusercontent.com/anubhvv360/portfolio/main/assets/anubhav_photo.png", width=180)
     st.markdown("## About Me")
     st.write(
         "Tech-savvy consultant with 3 years of experience building Oracle-based systems for finance and supply chain. I turn business needs into scalable solutions—managing everything from design to rollout. Comfortable wearing multiple hats, working cross-functionally, and delivering impact in fast-paced, agile environments."
