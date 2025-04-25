@@ -5,7 +5,7 @@ st.set_page_config(page_title="Gen AI Apps Portfolio", page_icon = "👨‍💻"
 
 # Common Introduction
 st.title("Anubhav's Gen AI Apps")
-st.write("Welcome to my portfolio of Gen AI applications. I create these apps using Streamlit, LangChain and Gemini. Below you'll find individual sections for each app with a brief description, demo video, and a button to try out the app.")
+st.write("Welcome to my portfolio of Gen AI applications. I create these apps using Streamlit, LangChain and Gemini. Below you'll find the applications, do take them for a test drive!")
 
 # Define the portfolio apps
 apps = [
