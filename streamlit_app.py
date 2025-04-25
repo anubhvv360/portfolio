@@ -40,11 +40,11 @@ with st.sidebar:
     st.markdown(
         """
         - **2025–Present:** Consultant at Accenture Avanade
-        - **2024–2025:** *MBA* — Great Lakes Institute of Management, Chennai
-        - **2023–2024:** Certificate Programme in Project Management (CPPM) - IIM Indore, Executive Education
+        - **2024–2025:** _MBA_ — Great Lakes Institute of Management, Chennai
+        - **2023–2024:** Certificate Programme in Project Management (_CPPM_) — IIM Indore, Executive Education
         - **2022–2024:** Consultant at Genpact
         - **2021–2022:** Senior Associate at Genpact
-        - **2018–2021:** _BBA Finance_ - Symbiosis Centre for Management Studies, Noida
+        - **2018–2021:** _BBA Finance_ — Symbiosis Centre for Management Studies, Noida
         """
     )
 
