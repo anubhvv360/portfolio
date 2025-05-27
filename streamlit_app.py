@@ -14,7 +14,7 @@ st.title("Anubhav's Gen AI Apps")
 st.write(
     "Welcome to my portfolio of Gen AI applications. "
     "I create these apps using Streamlit, LangChain and Gemini. "
-    "Below you'll find the applications—do take them for a test drive!"
+    "Below you'll find the applications. Do take them for a test drive!"
 )
 
 # Sidebar with photo, summary, timeline, contact and LinkedIn posts
@@ -33,13 +33,13 @@ with st.sidebar:
     #st.image("https://raw.githubusercontent.com/anubhvv360/portfolio/main/assets/anubhav_photo.png", width=180)
     st.markdown("## About Me")
     st.write(
-        "Tech-savvy consultant with 3 years of experience building Oracle-based systems for finance and supply chain. I turn business needs into scalable solutions—managing everything from design to rollout. Comfortable wearing multiple hats, working cross-functionally, and delivering impact in fast-paced, agile environments."
+        "Tech-savvy consultant with 3 years of experience in Consulting, Operating and Analytics. I turn business needs into scalable solutions—managing everything from design to rollout. Comfortable wearing multiple hats, working cross-functionally, and delivering impact in fast-paced, agile environments."
     )
 
     st.markdown("### 📅 Professional Journey")
     st.markdown(
         """
-        - **2025–Present:** Consultant at Accenture Avanade
+        - **2025–Present:** Consultant at Accenture
         - **2024–2025:** _MBA_ — Great Lakes Institute of Management, Chennai
         - **2023–2024:** Certificate Programme in Project Management (_CPPM_) — IIM Indore, Executive Education
         - **2022–2024:** Consultant at Genpact
