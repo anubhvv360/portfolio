@@ -92,6 +92,12 @@ apps = [
         "link": "https://procurementagent.streamlit.app/"
     },
     {
+        "name": "HR Policy Chatbot",
+        "description": "This GenAI-powered HR Policy Bot lets you upload HR policy PDFs, extracts and consolidates their content, and delivers concise, accurate answers via Google Gemini in a simple Streamlit chat interface—streamlining policy lookup and compliance guidance.",
+        "video_url": "https://youtu.be/MO21CyE5sc0",
+        "link": "https://hr-policy-chatbot.streamlit.app/"
+    },
+    {
         "name": "Kids’ Visionboard Generator",
         "description": "This image + scenario generation agent turns a single photo and name into a playful, Pixar-style storyboard. Upload your child’s photo, pick (or type) a theme, and watch custom illustrations come to life—then download each one instantly!",
         "video_url": "https://youtu.be/ACyzl0wUK24",
