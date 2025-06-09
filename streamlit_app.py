@@ -33,7 +33,7 @@ with st.sidebar:
     #st.image("https://raw.githubusercontent.com/anubhvv360/portfolio/main/assets/anubhav_photo.png", width=180)
     st.markdown("## About Me")
     st.write(
-        "Tech-savvy consultant with 3 years of experience in Consulting, Operating and Analytics. I turn business needs into scalable solutions—managing everything from design to rollout. Comfortable wearing multiple hats, working cross-functionally, and delivering impact in fast-paced, agile environments."
+        "Tech-savvy consultant with 3 years of experience in Consulting, Operations and Analytics. I turn business needs into scalable solutions, managing everything from design to rollout. Comfortable wearing multiple hats, working cross-functionally, and delivering impact in fast-paced, agile environments."
     )
 
     st.markdown("### 📅 Professional Journey")
