@@ -133,7 +133,7 @@ apps = [
 for app in apps:
     st.header(app["name"])
     st.write(app["description"])
-    st.video(app["video_url"])
+    #st.video(app["video_url"])
 
     link = app["link"]
     button_html = f'''
